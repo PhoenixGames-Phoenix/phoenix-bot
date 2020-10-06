@@ -1,3 +1,9 @@
+#Secrets
+secrets.json
+
+#Vscode
+.vscode
+
 # Logs
 logs
 *.log
