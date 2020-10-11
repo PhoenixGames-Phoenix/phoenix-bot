@@ -1,7 +1,6 @@
 const discord = require('discord.js');
 const fs = require('fs');
 const cfg = require('./config.js');
-const config = cfg.loadconfig();
 const secrets = cfg.loadsecrets();
 
 const client = new discord.Client();
@@ -25,7 +24,7 @@ client.on('message', async msg => {
     const args = msg.content.slice(cfg.loadconfig().prefix.length).trim().split(' ');
     const commandName = args.shift().toLowerCase();
 
-    if (!client.commands.has(commandName)) return await msg.channel.send(config.loadconfig().messages.unknwoncommand);
+    if (!client.commands.has(commandName)) return await msg.channel.send(cfg.loadconfig().messages.unknwoncommand);
 
     const command = await client.commands.get(commandName);
 

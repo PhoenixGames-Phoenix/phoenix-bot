@@ -7,5 +7,8 @@
       "notenoughargs": ":x: Error 400: Not enough arguments!",
       "embedfooter": "If you think there is an error, please report it at https://github.com/PhoenixGames-Phoenix/phx-bot/issues"
     },
+    "channels": {
+      "modlog": "763842004672708630"
+    },
     "botowner": "Phoenix#8577"
   }
