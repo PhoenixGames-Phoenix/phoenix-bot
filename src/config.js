@@ -6,5 +6,8 @@ module.exports = {
     },
     loadsecrets: function loadsecrets() {
         return JSON.parse(fs.readFileSync('./config/secrets.json'));
+    },
+    loadranks: function loadranks() {
+        return JSON.parse(fs.readFileSync('./config/ranks.json'));
     }
 }

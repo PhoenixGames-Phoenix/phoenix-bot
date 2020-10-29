@@ -14,7 +14,7 @@ for (const file of commandFiles) {
 }
 
 client.on('ready', () => {
-    console.log(``);
+    console.log(`Bot Ready!\nRunning ${cfg.loadconfig().version} as ${client.user.username}`);
     client.user.setActivity(`https://github.com/PhoenixGames-Phoenix/phoenix-bot`, { type: 'WATCHING'});
 })
 
