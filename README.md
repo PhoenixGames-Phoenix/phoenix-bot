@@ -34,6 +34,51 @@ npx eslint ./src/
 
 in the base directory. Don't worry if it doesn't give any output, that just means that it found no errors.
 
+### Config
+
+To use the bot properly, you'll have to change and add some config files in the config folder.
+
+1. Create a secrets.json file with your bot token
+
+Format:
+
+```json
+{
+  "DiscordToken": "YourDiscordToken"
+}
+```
+
+2. Change the config.json file to match your settings
+
+Format:
+
+```json
+{
+  "prefix": "-",
+  "version": "vMajor.Minor.Patch-Branch",
+  "messages": {
+    // Messages as seen in the config.json file in the repo
+  },
+  "channels": {
+    // Channel IDs as seen in the config.json file in the repo
+  },
+  "botowner": "YourDiscordName#1337"
+}
+```
+
+3. Change the ranks.json file to match your servers Ranks
+
+If you want to "disable" this feature, just clear the file
+
+Format:
+
+```json
+{
+  "friend": ["ID1", "ID2", "ID3"],
+  "moderator": ["ID1", "ID2", "ID3"]
+}
+```
+
 #### IDE / Text Editor
 
 You can code in node with almost every IDE or Text Editor. My Personal favorite is vscode because of IntelliSense and the ton of Extensions available, but you should be good with every other IDE or Text Editor

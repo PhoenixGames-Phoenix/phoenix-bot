@@ -9,9 +9,7 @@
       "embedfooter": "If you think there is an error, please report it at https://github.com/PhoenixGames-Phoenix/phx-bot/issues"
     },
     "channels": {
-      "modlog": "763842004672708630",
-      "amongus": "770672487246987305",
-      "amongusDead": "770672553500606535"
+      "modlog": "763842004672708630"
     },
     "botowner": "Phoenix#8577"
-  }
+}
