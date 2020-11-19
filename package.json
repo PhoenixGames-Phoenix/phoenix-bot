@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/PhoenixGames-Phoenix/phoenix-bot#readme",
   "dependencies": {
+    "axios": "^0.21.0",
     "discord.js": "^12.3.1"
   },
   "devDependencies": {

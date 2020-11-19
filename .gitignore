@@ -1,6 +1,9 @@
 #Secrets
 secrets.json
 
+# Image cache
+imgcache
+
 #Vscode
 .vscode
 
