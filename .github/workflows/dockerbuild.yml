@@ -1,14 +1,14 @@
 name: phoenix-bot docker CI
 
 on:
-    push:
-        branches: [ main ]
-    pull_request:
-        branches: [ main ]
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
 jobs:
-    build:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v2
-            - name: Build Image
-              run: docker build . --file Dockerfile --tag phx-bot:$(date +%s)
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build Image
+        run: docker build . --file Dockerfile --tag phx-bot:$(date +%s)

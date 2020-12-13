@@ -1,23 +1,23 @@
 name: phoenix-bot eslint CI
 
 on:
-    push:
-        branches: [ main ]
-    pull_request:
-        branches: [ main ]
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
 jobs:
-    lint:
-        runs-on: ubuntu-latest
-        strategy:
-            matrix:
-                node: [ '12', '14' ]
-        steps:
-            - uses: actions/checkout@v2
-            - name: Setup node
-              uses: actions/setup-node@v1
-              with:
-                node-version: ${{ matrix.node }}
-            - name: Install packages
-              run: npm i
-            - name: Run ESLint
-              run: npm run lint
+  lint:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: ["12", "14"]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Install packages
+        run: npm i
+      - name: Run ESLint
+        run: npm run lint

@@ -4,6 +4,9 @@ secrets.json
 # Image cache
 imgcache
 
+#nvm
+.nvmrc
+
 #Vscode
 .vscode
 
