@@ -11,12 +11,6 @@
     "hookIDs": {
         "log": "787747049977937980"
     },
-    "mongodb": {
-        "Host": "127.0.0.1",
-        "Port": "27017",
-        "User": "DCMod",
-        "AuthSource": "phoenixdiscord"
-    },
     "messages": {
         "commanderror": ":x: Error 500: There was an Error trying to execute this command!",
         "unknwoncommand": ":x: Error 404: Command does not exist!",

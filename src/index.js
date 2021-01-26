@@ -236,10 +236,10 @@ client.on("message", async (msg) => {
     const command = await client.commands.get(commandName);
 
     try {
-        command.execute(msg, args);
+        await command.execute(msg, args);
     } catch (error) {
         console.error(error);
-        msg.channel.send(config.loadconfig().messages.commanderror);
+        await msg.channel.send(config.loadconfig().messages.commanderror);
     }
 });
 
